@@ -2,7 +2,7 @@ from psana import *
 from pypsalg import find_edges
 import matplotlib.pyplot as plt
 
-ds = DataSource('exp=amotut13:run=206')
+ds = MPIDataSource('exp=amotut13:run=206')
 det = Detector('AmoETOF.0:Acqiris.0')
 
 for nevent, evt in enumerate(ds.events()):

@@ -1,7 +1,7 @@
 from psana import *
 
 
-ds = DataSource('exp=xpptut15:run=59:smd')
+ds = MPIDataSource('exp=xpptut15:run=59:smd')
 epicsVarFullName = Detector('HX2:DVD:GCC:01:PMON')
 epicsVarAlias = Detector('SampleTemp_GetA')
 

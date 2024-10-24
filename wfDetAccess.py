@@ -1,5 +1,5 @@
 from psana import *
-ds = DataSource('exp=xpptut15:run=280')
+ds = MPIDataSource('exp=xpptut15:run=280')
 det = Detector('ACQ1')
 for nevent,evt in enumerate(ds.events()):
     # waveforms are in Volts, times are in Seconds

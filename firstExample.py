@@ -1,7 +1,7 @@
 from psana import *
 import matplotlib.pyplot as plt
 
-ds = DataSource('exp=xpptut15:run=54:smd')
+ds = MPIDataSource('exp=xpptut15:run=54:smd')
 det = Detector('cspad')
 
 for nevent, evt in enumerate(ds.events()):

@@ -1,6 +1,6 @@
 from psana import *
 
-ds = DataSource('exp=xpptut15:run=59:smd')
+ds = MPIDataSource('exp=xpptut15:run=59:smd')
 detNames = DetNames()
 print('*** Detector Names (Full-Name, DAQ-Alias, User-Alias) ***')
 for detname in DetNames():
